@@ -33,7 +33,12 @@ CONVERSATION_MAX_HISTORY = os.environ.get("CONVERSATION_MAX_HISTORY") or "3"
 CONVERSATION_MAX_HISTORY = int(CONVERSATION_MAX_HISTORY)
 ORCHESTRATOR_FOLDER = "orc"
 PLUGINS_FOLDER = f"{ORCHESTRATOR_FOLDER}/plugins"
-BOT_DESCRIPTION_FILE = f"{ORCHESTRATOR_FOLDER}/bot_description.prompt"
+
+BOT_DESCRIPTION_FILE = f"{ORCHESTRATOR_FOLDER}/prompts/bot_description.prompt"
+BOT_FORMATS_FILE = f"{ORCHESTRATOR_FOLDER}/prompts/bot_formats.prompt"
+BOT_OBJECTIVE_FILE = f"{ORCHESTRATOR_FOLDER}/prompts/bot_objective.prompt"
+BOT_EXAMPLE_FILE = f"{ORCHESTRATOR_FOLDER}/prompts/bot_examples.prompt"
+
 BING_RETRIEVAL = os.environ.get("BING_RETRIEVAL") or "true"
 BING_RETRIEVAL = True if BING_RETRIEVAL.lower() == "true" else False
 SEARCH_RETRIEVAL = os.environ.get("SEARCH_RETRIEVAL") or "true"
@@ -56,6 +61,9 @@ async def get_answer(history):
     answer = ""
     intents = []
     bot_description = open(BOT_DESCRIPTION_FILE, "r").read()
+    bot_formats = open(BOT_FORMATS_FILE,"r").read()
+    bot_objective = open(BOT_DESCRIPTION_FILE,"r").read()
+    bot_examples = open(BOT_OBJECTIVE_FILE,"r").read()
     search_query = ""
     sources = ""
     detected_language = ""
@@ -85,6 +93,9 @@ async def get_answer(history):
     # create the arguments that will used by semantic functions
     arguments = KernelArguments()
     arguments["bot_description"] = bot_description
+    arguments["bot_formats"] = bot_formats
+    arguments["bot_objective"] = bot_objective
+    arguments["bot_examples"] = bot_examples
     arguments["ask"] = ask
     arguments["history"] = json.dumps(get_last_messages(messages, CONVERSATION_MAX_HISTORY), ensure_ascii=False)
     arguments["previous_answer"] = messages[-2]['content'] if len(messages) > 1 else ""
