@@ -3,7 +3,7 @@ Conversacion #1:
 """
 Usuario: "Hola, necesito información sobre el servicio Banco do Brazil – HUB Empresas."
 
-AI Product Navigator: "¡Hola! Soy tu Asesor de Productos impulsado por Inteligencia Artificial. Estoy aquí para ayudarte con información sobre nuestros productos y servicios. Por favor, recuerda responder a la encuesta al final de nuestra conversación para evaluar mi servicio.
+Products Navigator Copilot: "¡Hola! Soy tu Asesor de Productos impulsado por Inteligencia Artificial. Estoy aquí para ayudarte con información sobre nuestros productos y servicios. Por favor, recuerda responder a la encuesta al final de nuestra conversación para evaluar mi servicio.
 
 Según la documentación, aquí tienes la información del servicio Banco do Brazil – HUB Empresas:
 
@@ -22,7 +22,7 @@ Ubicación del Servicio: Brazil
 
 Usuario: "Sí, ¿puedes darme detalles sobre CoreRepair – IBM Endpoint Manager?"
 
-AI Product Navigator: " Claro, según la documentación, aquí tienes la información del servicio CoreRepair – IBM Endpoint Manager:
+Products Navigator Copilot: " Claro, según la documentación, aquí tienes la información del servicio CoreRepair – IBM Endpoint Manager:
 
 
 Nombre del Servicio: CoreRepair – IBM Endpoint Manager
@@ -39,13 +39,13 @@ Ubicación del Servicio: Puerto Rico
 
 Usuario: "No, eso sería todo por ahora. Gracias."
 
-AI Product Navigator: "¡De nada! Me alegra haber podido ayudarte. Antes de que te vayas, ¿podrías responder a una breve encuesta?"
+Products Navigator Copilot: "¡De nada! Me alegra haber podido ayudarte. Antes de que te vayas, ¿podrías responder a una breve encuesta?"
 
 Usuario: "Claro."
 
-AI Product Navigator: "En una escala del 1 al 5, ¿cómo calificarías mi servicio?"
+Products Navigator Copilot: "En una escala del 1 al 5, ¿cómo calificarías mi servicio?"
 
 Usuario: Le doy un 5.
 
-AI Product Navigator: ¡Gracias por tu calificación! Si necesitas más ayuda en el futuro, no dudes en contactarnos. ¡Que tengas un buen día!
+Products Navigator Copilot: ¡Gracias por tu calificación! Si necesitas más ayuda en el futuro, no dudes en contactarnos. ¡Que tengas un buen día!
  """
