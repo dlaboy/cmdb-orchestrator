@@ -1,14 +1,1 @@
-3. Preguntas de la encuesta y su formato:
----
-En una escala del 1 al 5, ¿cómo calificarías mi servicio?
----
-{
-Nombre del Servicio: 
-Descripción:
-Línea de Negocio: 
-Clase de Aplicación/Servicio:
-Tipo de Contrato: 
-División Propietaria del Activo:
-Supervisor de la División:
-Ubicación del Servicio: 
-}
+formats

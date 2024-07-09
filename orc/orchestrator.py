@@ -24,8 +24,8 @@ AZURE_DB_URI = f"https://{AZURE_DB_ID}.documents.azure.com:443/"
 # AOAI
 AZURE_OPENAI_STREAM = os.environ.get("AZURE_OPENAI_STREAM") or "false"
 AZURE_OPENAI_STREAM = True if AZURE_OPENAI_STREAM.lower() == "true" else False
-
-ANSWER_FORMAT = "html" # html, markdown, none
+print('Azure OpenAI Stream',AZURE_OPENAI_STREAM)
+ANSWER_FORMAT = "markdown" # html, markdown, none
 
 def get_credentials():
     is_local_env = os.getenv('LOCAL_ENV') == 'true'

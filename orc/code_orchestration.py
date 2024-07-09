@@ -99,7 +99,6 @@ async def get_answer(history):
     arguments["ask"] = ask
     arguments["history"] = json.dumps(get_last_messages(messages, CONVERSATION_MAX_HISTORY), ensure_ascii=False)
     arguments["previous_answer"] = messages[-2]['content'] if len(messages) > 1 else ""
-
     # import RAG plugins
     conversationPlugin = kernel.import_plugin_from_prompt_directory(PLUGINS_FOLDER, "Conversation")
     retrievalPlugin = kernel.import_native_plugin_from_directory(PLUGINS_FOLDER, "Retrieval")
