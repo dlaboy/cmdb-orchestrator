@@ -60,7 +60,7 @@ Example:
     Pregunta #2: '''¿La compañía tiene soluciones para empresas facturadoras?'''
     Respuesta: Sí, la compañía tiene soluciones para empresas facturadoras. Según la documentación, aquí tienes la información del servicio relevante:
 
-    #Nombre del Servicio: Banco do Brazil – HUB Empresas
+    # Nombre del Servicio: Banco do Brazil – HUB Empresas
     **Descripción**: Plataforma central para empresas facturadoras que facilita el intercambio de información sobre deudas y pagos.
     **Línea de Negocio**: Payment Services
     **Clase de Aplicación/Servicio**: Application
